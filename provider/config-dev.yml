@@ -9,3 +9,10 @@ spring:
     port: 6379      # Redis服务器端口号
     password:       # Redis密码（若有设置则必须提供）
     database: 0     # Redis数据库索引（默认为0）
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${REGISTER_IP:localhost}:${REGISTER_PORT:9040}/eureka/
+    healthcheck:
+      enabled: true

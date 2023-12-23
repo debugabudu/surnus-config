@@ -23,3 +23,10 @@ spring:
         min-idle:    5              # 最小空闲连接数
         max-wait:    2000ms         # 获取连接的最大等待时间
         validationQuery: SELECT 1   # 校验连接是否正常工作的SQL语句
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${REGISTER_IP:localhost}:${REGISTER_PORT:9040}/eureka/
+    healthcheck:
+      enabled: true
