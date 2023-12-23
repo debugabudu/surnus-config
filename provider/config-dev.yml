@@ -1,0 +1,11 @@
+taskExecutor:
+  corePoolSize: 5
+  maxPoolSize: 10
+  queueCapacity: 10
+
+spring:
+  redis:
+    host: localhost # Redis服务器地址
+    port: 6379      # Redis服务器端口号
+    password:       # Redis密码（若有设置则必须提供）
+    database: 0     # Redis数据库索引（默认为0）
