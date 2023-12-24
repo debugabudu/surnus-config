@@ -6,9 +6,10 @@ taskExecutor:
 spring:
   influxdb:
     url: http://localhost:8086
-    user: admin
+    username: admin
     password:
     database: ly_test
+    retentionPolicy:
   data:
     mongodb:
       host: localhost
