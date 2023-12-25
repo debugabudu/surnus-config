@@ -4,7 +4,7 @@ system:
     maxPoolSize: 10
     queueCapacity: 10
 
-user:
+vuser:
   taskExecutor:
     corePoolSize: 5
     maxPoolSize: 10
