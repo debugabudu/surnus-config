@@ -23,7 +23,7 @@ spring:
       pool:         # Lettuce连接池配置
         max-active:  100           # 最大活动连接数
         min-idle:    5              # 最小空闲连接数
-        max-wait:    2000ms         # 获取连接的最大等待时间
+        max-wait:    2000           # 获取连接的最大等待时间
         validationQuery: SELECT 1   # 校验连接是否正常工作的SQL语句
 
 eureka:
