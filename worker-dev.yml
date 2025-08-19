@@ -10,13 +10,15 @@ vuser:
     maxPoolSize: 10
     queueCapacity: 10
 
+qps.optimal: 10
+
 spring:
   redis:
     host: localhost # Redis服务器地址
     port: 6379      # Redis服务器端口号
     password:       # Redis密码 (若有)
     database: 0     # Redis数据库索引
-    timeout:        # Redis超时时间
+    timeout: 300       # Redis超时时间
     lettuce:
       pool:         # Lettuce连接池配置
         max-active:  100           # 最大活动连接数
