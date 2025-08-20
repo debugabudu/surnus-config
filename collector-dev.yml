@@ -4,6 +4,15 @@ taskExecutor:
   queueCapacity: 10
 
 spring:
+  cloud:
+    stream:
+      bindings:
+        detail-result-in:
+          destination: detail-result
+        scripts-result-in:
+          destination: scripts-result
+        vusers-result-in:
+          destination: vusers-result
   influxdb:
     url: http://localhost:8086
     username: admin

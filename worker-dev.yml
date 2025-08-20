@@ -13,6 +13,13 @@ vuser:
 qps.optimal: 10
 
 spring:
+  cloud:
+    stream:
+      bindings:
+        detail-result-out:
+          destination: detail-result
+        scripts-result-out:
+          destination: scripts-result
   redis:
     host: localhost # Redis服务器地址
     port: 6379      # Redis服务器端口号

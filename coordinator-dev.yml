@@ -4,6 +4,11 @@ taskExecutor:
   queueCapacity: 10
 
 spring:
+  cloud:
+      stream:
+        bindings:
+          vusers-result-out:
+            destination: vusers-result
   datasource:
     url: jdbc:mysql://localhost:3306/sturnus?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
     username: root
